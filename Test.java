@@ -3,24 +3,25 @@
  * @author Alexis
  *
  */
-import java.util.Random;
+
 public class Test {
-	public static void main(String[] args) {
-		Random randGen;
-		int num;
-		int num2;
+	public static void main(String[] args ) {
+//		System.out.println(78+98); //176
+//		System.out.println('a'+'b'); //195
+//		System.out.println('a'-'b'); //-1
+//		System.out.println('0'+'0'); //96
+//		System.out.println('a'+1); //98
+//		System.out.println('a'); //a
 		
-		randGen= new Random();		
-		num = randGen.nextInt(15)+1; //generates a random 1-15
+		int num = 4;
+		double dollars = 0.99;
+		String name1 = "Alexis";
+		String name2 = "Charly";
 		
-		num2 = 14;
+		System.out.printf("I have %d cars %n", num);
+		System.out.printf(" Kevin has %n %.2f in his pocket", dollars);
 		
-		System.out.println("The number of today is");
-		System.out.println(num);
-		
-		if(num==num2)
-			System.out.println("It's a match");
-		else
-			System.out.println("It is not a match");
+		System.out.printf("%n %s is %d years older than %s", name1, num, name2);
+
 	}
 }
